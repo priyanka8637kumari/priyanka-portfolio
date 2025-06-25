@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, Github, ArrowUp } from 'lucide-react';
+import { Mail, Github, ArrowUp, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
@@ -57,10 +57,10 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8 animate-fade-in-up">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                I'm always open to discussing new opportunities, collaborating on 
-                interesting projects, or simply connecting with fellow developers. 
+              <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                {/* I'm always open to discussing new opportunities, collaborating on 
+                interesting projects, or simply connecting with fellow developers.  */}
                 Drop me a message and let's start a conversation!
               </p>
             </div>
@@ -75,10 +75,10 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold">Email</h4>
                       <a 
-                        href="mailto:priyanka@example.com"
+                        href="mailto:prisri0801@gmail.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        priyanka@example.com
+                        prisri0801@gmail.com
                       </a>
                     </div>
                   </div>
@@ -94,7 +94,7 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold">GitHub</h4>
                       <a 
-                        href="https://github.com/priyanka"
+                        href="https://github.com/priyanka8637kumari"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
@@ -105,9 +105,30 @@ const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
+
+              <Card className="bg-secondary/30 border-border hover:bg-secondary/50 transition-colors">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="p-3 bg-primary/10 rounded-lg">
+                      <Linkedin className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Linkedin</h4>
+                      <a 
+                        href="https://www.linkedin.com/in/priyanka-kumari-995901274/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        linkedin.com/in/priyanka
+                      </a>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
 
-            <div className="pt-6">
+            <div className="pt-1">
               <Button size="lg" asChild className="w-full md:w-auto">
                 <a 
                   href="/resume.pdf" 
