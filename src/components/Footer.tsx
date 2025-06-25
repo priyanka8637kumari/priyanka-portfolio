@@ -1,5 +1,5 @@
 
-import { Github, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +13,7 @@ const Footer = () => {
               Priyanka
             </div>
             <p className="text-muted-foreground">
-              Frontend Developer based in Sweden
+              Frontend Developer based in Stockholm
             </p>
           </div>
 
@@ -33,6 +33,15 @@ const Footer = () => {
               aria-label="Email Contact"
             >
               <Mail className="h-5 w-5" />
+            </a>
+             <a
+              href="https://www.linkedin.com/in/priyanka-kumari-995901274/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Linkedin Profile"
+            >
+              <Linkedin className="h-5 w-5" />
             </a>
           </div>
         </div>
