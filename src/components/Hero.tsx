@@ -1,19 +1,18 @@
-
-import { Button } from '@/components/ui/button';
-import { Github, Mail, ArrowDown } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Github, Mail, ArrowDown } from "lucide-react";
 
 const Hero = () => {
   const scrollToProjects = () => {
-    const element = document.getElementById('projects');
+    const element = document.getElementById("projects");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const scrollToContact = () => {
-    const element = document.getElementById('contact');
+    const element = document.getElementById("contact");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -36,26 +35,30 @@ const Hero = () => {
               Frontend Developer
             </span>
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Hi, I'm{' '}
-            <span className="text-gradient">Priyanka</span>
+            Hi, I'm <span className="text-gradient">Priyanka</span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Based in Sweden, I craft exceptional digital experiences with React, TypeScript, 
-            and modern web technologies. Recently graduated from Hyper Island and passionate 
-            about creating user-centric solutions.
+            Based in Stockholm, studying at Hyper Island and
+            open to internship opportunities. Skilled in React, TypeScript,
+            Next.js, Tailwind, and Shadcn — with hands-on experience in
+            full-stack MERN and Strapi CMS projects.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" onClick={scrollToProjects} className="text-lg px-8 py-6">
+            <Button
+              size="lg"
+              onClick={scrollToProjects}
+              className="text-lg px-8 py-6"
+            >
               View My Work
               <ArrowDown className="ml-2 h-4 w-4" />
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
+            <Button
+              variant="outline"
+              size="lg"
               onClick={scrollToContact}
               className="text-lg px-8 py-6"
             >
@@ -66,7 +69,7 @@ const Hero = () => {
 
           <div className="flex justify-center space-x-6">
             <a
-              href="https://github.com/priyanka"
+              href="https://github.com/priyanka8637kumari"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -74,7 +77,7 @@ const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="mailto:priyanka@example.com"
+              href="mailto:prisri0801@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-6 w-6" />
