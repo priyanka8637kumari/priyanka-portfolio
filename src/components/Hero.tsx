@@ -17,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-mesh">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-blue-500/10 to-purple-600/10 animate-gradient-shift bg-[length:200%_200%]"></div>

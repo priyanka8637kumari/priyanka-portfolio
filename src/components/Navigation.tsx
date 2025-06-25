@@ -18,9 +18,12 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold text-gradient">
+          <button 
+            onClick={() => scrollToSection('hero')}
+            className="text-xl font-bold text-gradient hover:opacity-80 transition-opacity cursor-pointer"
+          >
             Priyanka
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
