@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Mail, ArrowDown } from "lucide-react";
+import { Github, Mail, ArrowDown, Linkedin } from "lucide-react";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -81,6 +81,14 @@ const Hero = () => {
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-6 w-6" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/priyanka-kumari-995901274/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Linkedin className="h-6 w-6" />
             </a>
           </div>
         </div>
