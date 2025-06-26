@@ -4,39 +4,39 @@ import { Github, ArrowUp } from 'lucide-react';
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A modern e-commerce solution built with React, Redux Toolkit, and TypeScript. Features include product catalog, shopping cart, user authentication, and payment integration.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
-    tags: ["React", "Redux Toolkit", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/priyanka/ecommerce-platform",
+    title: "Music School App",
+    description: "A modern and basic music academy website built with Nextjs, Acertainity UI and Tailwind CSS. Features include beautiful visualizations, smooth animations and responsive design.",
+    image: "images/music-app.png",
+    tags: ["Next.js", "Acertainity UI", "Tailwind CSS"],
+    github: "https://github.com/priyanka8637kumari/Music-School-App",
     live: "https://ecommerce-demo.netlify.app",
     featured: true
   },
   {
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80",
-    tags: ["React", "TypeScript", "Firebase", "Shadcn/UI"],
-    github: "https://github.com/priyanka/task-manager",
-    live: "https://task-manager-demo.netlify.app",
+    title: "MoneyMate App",
+    description: "A full-stack expense tracker application built with the MERN stack. Features include secure login and CRUD implementation of transactions - all in a clean, intuitive interface.",
+    image: "images/moneymate.png",
+    tags: ["React", "JavaScript", "Tailwind CSS", "MongoDB"],
+    github: "https://github.com/priyanka8637kumari/Expense-Tracker-MERN-",
+    live: "https://moneymate4u.netlify.app/login",
     featured: true
   },
   {
-    title: "Weather Dashboard",
-    description: "An interactive weather dashboard with location-based forecasts, beautiful visualizations, and responsive design.",
-    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80",
-    tags: ["React", "API Integration", "Chart.js", "CSS Modules"],
-    github: "https://github.com/priyanka/weather-dashboard",
-    live: "https://weather-dashboard-demo.netlify.app",
+    title: "Hyper Island Evolution",
+    description: "A browser-based WebXR experience built using A-Frame that immerses the user in a series of 3D models and custom VR interactions.",
+    image: "images/webXR.png",
+    tags: ["A-frame", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/priyanka8637kumari/HyperIsalnd-Evolution",
+    live: "https://hievolution.netlify.app/",
     featured: false
   },
   {
-    title: "Portfolio Website",
-    description: "A responsive portfolio website showcasing projects and skills with modern design principles and smooth animations.",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion", "MDX"],
-    github: "https://github.com/priyanka/portfolio",
-    live: "https://priyanka-portfolio.netlify.app",
+    title: "Todo App with Redux Toolkit",
+    description: "A simple yet functional To-Do List App using Redux Toolkit to understand state management, slices, and async actions. .",
+    image: "images/Todo.png",
+    tags: ["React", "Redux Toolkit", "Tailwind CSS"],
+    github: "https://github.com/priyanka8637kumari/Todo-App-with-Redux-Toolkit",
+    live: "https://todosreduxtoolkit.netlify.app/",
     featured: false
   },
   {
