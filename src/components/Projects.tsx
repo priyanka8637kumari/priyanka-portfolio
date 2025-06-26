@@ -16,7 +16,7 @@ const projects = [
     image: "images/music-app.png",
     tags: ["Next.js", "Acertainity UI", "Tailwind CSS"],
     github: "https://github.com/priyanka8637kumari/Music-School-App",
-    live: "https://ecommerce-demo.netlify.app",
+    live: "https://music-school-app06.vercel.app/",
     featured: true,
   },
   {
