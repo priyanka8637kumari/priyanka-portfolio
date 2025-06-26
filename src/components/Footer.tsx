@@ -19,7 +19,7 @@ const Footer = () => {
 
           <div className="flex items-center space-x-6">
             <a
-              href="https://github.com/priyanka"
+              href="https://github.com/priyanka8637kumari"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -28,7 +28,7 @@ const Footer = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="mailto:priyanka@example.com"
+              href="mailto:prisri0801@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="Email Contact"
             >
