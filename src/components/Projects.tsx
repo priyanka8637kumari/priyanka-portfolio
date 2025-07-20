@@ -10,6 +10,16 @@ import { Github, ArrowUp } from "lucide-react";
 
 const projects = [
   {
+    title: "Anonymous Inbox",
+    description:
+      "A web app that lets users send and receive anonymous messages built with Next.js (App Router), MongoDB and NextAuth. It focuses on privacy, simplicity, and user-friendly interaction.",
+    image: "images/Anonymous-Inbox.png",
+    tags: ["Next.js", "MongoDB", "NextAuth", "Resend"],
+    github: "https://github.com/priyanka8637kumari/Anonymous-Inbox",
+    live: "https://anonymous-inbox.netlify.app/",
+    featured: false,
+  },
+  {
     title: "Music School App",
     description:
       "A modern and basic music academy website built with Nextjs, Acertainity UI and Tailwind CSS. Features include beautiful visualizations, smooth animations and responsive design.",
