@@ -42,7 +42,7 @@ const Hero = () => {
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             Based in Stockholm, studying at Hyper Island and
-            open to internship opportunities. Skilled in React, TypeScript,
+            open to internship or job opportunities. Skilled in React, TypeScript,
             Next.js, Tailwind, and Shadcn — with hands-on experience in
             full-stack MERN and Strapi CMS projects.
           </p>

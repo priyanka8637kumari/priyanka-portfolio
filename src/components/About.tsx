@@ -101,6 +101,20 @@ const About = () => {
                   </p>
                 </div>
               </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">
+                  Internship
+                </h3>
+                <div className="bg-secondary/30 p-4 rounded-lg border border-border">
+                  <h4 className="font-semibold text-primary">
+                    Frontend Developer Intern
+                  </h4>
+                  <p className="text-muted-foreground">YOICE, Stockholm</p>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    July 2025 - present
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
