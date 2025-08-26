@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, Mail, ArrowDown, Linkedin, MapPin, Calendar } from "lucide-react";
+import { BackgroundBeams } from "./ui/background-beams";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -128,6 +129,7 @@ const Hero = () => {
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
+      <BackgroundBeams />
     </section>
   );
 };
