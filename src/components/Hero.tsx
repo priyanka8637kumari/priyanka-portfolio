@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="flex justify-center mb-6">
             <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-primary/20 bg-primary/5 hover:bg-primary/10 transition-colors">
               <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse" />
-              Available for Internship Opportunities
+              Available for Job Opportunities
             </Badge>
           </div>
 

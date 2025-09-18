@@ -10,15 +10,16 @@ import { Github, ArrowUp } from "lucide-react";
 
 const projects = [
   {
-    title: "Anonymous Inbox",
+    title: "AutoThread Generator",
     description:
-      "A web app that lets users send and receive anonymous messages built with Next.js (App Router), MongoDB and NextAuth. It focuses on privacy, simplicity, and user-friendly interaction.",
-    image: "images/Anonymous-Inbox.png",
-    tags: ["Next.js", "MongoDB", "NextAuth", "Resend"],
-    github: "https://github.com/priyanka8637kumari/Anonymous-Inbox",
-    live: "https://anonymous-inbox.netlify.app/",
-    featured: false,
+      "An AI-powered web app that helps creators generate engaging Twitter threads from a topic and tone using Google Gemini API and also posts it on Twitter with one click.",
+    image: "images/autothread.png",
+    tags: ["Next.js", "Tailwind CSS", "NextAuth", "Framer Motion", "Google Gemini"],
+    github: "https://github.com/priyanka8637kumari/Auto-thread-generator",
+    live: "https://auto-thread-generator.vercel.app/",
+    featured: true,
   },
+ 
   {
     title: "Music School App",
     description:
@@ -34,10 +35,20 @@ const projects = [
     description:
       "A full-stack expense tracker application built with the MERN stack. Features include secure login and CRUD implementation of transactions - all in a clean, intuitive interface.",
     image: "images/moneymate.png",
-    tags: ["React", "JavaScript", "Tailwind CSS", "MongoDB"],
+    tags: ["React", "Express", "MongoDB"],
     github: "https://github.com/priyanka8637kumari/Expense-Tracker-MERN-",
     live: "https://moneymate4u.netlify.app/",
-    featured: true,
+    featured: false,
+  },
+   {
+    title: "Anonymous Inbox",
+    description:
+      "A web app that lets users send and receive anonymous messages built with Next.js (App Router), MongoDB and NextAuth. It focuses on privacy, simplicity, and user-friendly interaction.",
+    image: "images/Anonymous-Inbox.png",
+    tags: ["Next.js", "MongoDB", "NextAuth", "Resend"],
+    github: "https://github.com/priyanka8637kumari/Anonymous-Inbox",
+    live: "https://anonymous-inbox.netlify.app/",
+    featured: false,
   },
   {
     title: "Hyper Island Evolution",
