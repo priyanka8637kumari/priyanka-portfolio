@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, Mail, ArrowDown, Linkedin, MapPin, Calendar } from "lucide-react";
+import { Github, Mail, ArrowDown, Linkedin } from "lucide-react";
 import { BackgroundBeams } from "./ui/background-beams";
 
 const Hero = () => {
@@ -19,29 +19,35 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20">
-      {/* Modern Animated Background */}
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20"
+    >
+      {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-blue-500/5 to-purple-600/5 animate-gradient-shift bg-[length:200%_200%]" />
       </div>
 
-      {/* Floating Elements - More Subtle */}
+      {/* Floating elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-primary/10 to-blue-500/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-32 right-16 w-40 h-40 bg-gradient-to-r from-blue-500/10 to-purple-600/10 rounded-full blur-3xl animate-pulse delay-1000" />
       <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-r from-purple-600/10 to-primary/10 rounded-full blur-3xl animate-pulse delay-2000" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
-          {/* Status Badge */}
+          {/* Status badge */}
           <div className="flex justify-center mb-6">
-            <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-primary/20 bg-primary/5 hover:bg-primary/10 transition-colors">
+            <Badge
+              variant="outline"
+              className="px-4 py-2 text-sm font-medium border-primary/20 bg-primary/5 hover:bg-primary/10 transition-colors"
+            >
               <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse" />
-              Available for Job Opportunities
+              Open to Frontend Developer Roles
             </Badge>
           </div>
 
-          {/* Main Heading */}
+          {/* Main heading */}
           <div className="space-y-4 mb-8">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
               Hi, I'm{" "}
@@ -49,30 +55,50 @@ const Hero = () => {
                 Priyanka
               </span>
             </h1>
-            
-            <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed max-w-4xl mx-auto">
-              Stockholm-based developer studying at Hyper Island. I specialize in building modern, user-focused web applications with{" "}
-              <span className="text-primary font-medium">React</span>,{" "}
+
+            <p className="text-sm md:text-lg text-muted-foreground font-light leading-relaxed max-w-4xl mx-auto">
+              Stockholm-based frontend developer studying at{" "}
+              <span className="text-primary font-medium">Hyper Island</span> and
+              currently interning at{" "}
+              <span className="text-primary font-medium">Swirl</span>. At Swirl,
+              I contributed to{" "}
+              <a
+                href="https://usewill.com.br/en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-medium underline underline-offset-4 decoration-primary/40 hover:decoration-primary"
+              >
+                Will
+              </a>
+              , a financial health web app built with{" "}
               <span className="text-primary font-medium">Next.js</span>,{" "}
-              <span className="text-primary font-medium">TypeScript</span>, and{" "}
-              <span className="text-primary font-medium">AI-Integrated Solutions</span>.
+              <span className="text-primary font-medium">Neon</span>, and{" "}
+              <span className="text-primary font-medium">Vercel</span>. I
+              love building modern, user-focused interfaces with{" "}
+              <span className="text-primary font-medium">React</span> and{" "}
+              <span className="text-primary font-medium">TypeScript</span>, and
+              I am starting to build mobile UIs with{" "}
+              <span className="text-primary font-medium">Flutter</span>.
             </p>
           </div>
 
-          {/* Current Focus Card */}
+          {/* Current focus card */}
           <div className="mb-8 max-w-2xl mx-auto">
             <div className="bg-card/60 backdrop-blur-sm border border-border/60 rounded-lg p-6 hover:bg-card/80 hover:border-border/80 transition-all duration-300 shadow-md hover:shadow-lg">
-              <h3 className="text-lg font-semibold mb-3 text-primary">Current Focus</h3>
+              <h3 className="text-lg font-semibold mb-3 text-primary">
+                Current Focus
+              </h3>
               <p className="text-base text-foreground leading-relaxed">
-                Exploring AI-powered automation, secure authentication systems, and turning cutting-edge technologies into real, usable products.
+                Improving Will in production, learning Flutter by adding new
+                screens to my first mobile app, and deepening my experience with
+                Next.js, TypeScript, and modern deployment tools like Vercel and
+                Neon.
               </p>
             </div>
           </div>
 
-         
-        
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          {/* Action buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
             <Button
               size="lg"
               onClick={scrollToProjects}
@@ -92,7 +118,13 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Social Links - Improved Layout */}
+          {/* Short availability line */}
+          {/* <p className="mb-8 text-sm text-muted-foreground">
+            Actively looking for junior frontend roles and internships in
+            Stockholm and remote-friendly teams[web:0].
+          </p> */}
+
+          {/* Social links */}
           <div className="flex justify-center items-center gap-6">
             <a
               href="https://github.com/priyanka8637kumari"
@@ -123,12 +155,13 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Enhanced Scroll Indicator */}
+      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex justify-center bg-background/50 backdrop-blur-sm">
-          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
+          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse" />
         </div>
       </div>
+
       <BackgroundBeams />
     </section>
   );
