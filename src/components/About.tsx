@@ -7,78 +7,92 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
               About Me
             </h2>
-            <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 animate-fade-in-up">
+            {/* Left column – text */}
+            <div className="space-y-7 animate-fade-in-up">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate frontend developer based in Stockholm,
-                currently studying at
-                <span className="text-primary font-semibold">
-                  {" "}
-                  Hyper Island
-                </span>{" "}
-                where I honed my skills in modern web development and user
-                experience design. My journey into tech has been driven by a
-                love for creating digital solutions. I’m currently seeking an
-                internship opportunity to further grow my skills.
+                I&apos;m a frontend developer based in Stockholm, currently
+                studying at
+                <span className="text-primary font-semibold"> Hyper Island </span>
+                and interning as a frontend developer at
+                <span className="text-primary font-semibold"> Swirl</span>. At
+                Swirl, I contribute to
+                <a
+                  href="https://usewill.com.br/en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary font-semibold underline underline-offset-4 decoration-primary/40 hover:decoration-primary ml-1"
+                >
+                  Will
+                </a>
+                , a financial health web app used by real customers, which has
+                given me experience with production deployments and
+                cross‑functional collaboration.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I specialize in{" "}
-                <span className="text-primary font-semibold">React</span>,
+                I enjoy turning ideas into fast, accessible interfaces using
+                <span className="text-primary font-semibold"> React</span>,
+                <span className="text-primary font-semibold"> Next.js</span>,
+                <span className="text-primary font-semibold"> TypeScript</span>,
+                and modern UI libraries like
+                <span className="text-primary font-semibold"> Tailwind CSS </span>
+                and
+                <span className="text-primary font-semibold"> shadcn/ui</span>.
+                I&apos;ve also built full‑stack projects with the
+                <span className="text-primary font-semibold"> MERN stack </span>
+                and
                 <span className="text-primary font-semibold">
                   {" "}
-                  Redux Toolkit
-                </span>
-                , and
-                <span className="text-primary font-semibold"> TypeScript</span>,
-                crafting responsive and accessible web applications with{" "}
-                <span className="text-primary font-semibold">Tailwind CSS</span>
-                and{" "}
-                <span className="text-primary font-semibold">Shadcn/UI</span>.
-                I’ve built full-stack projects using{" "}
-                <span className="text-primary font-semibold">MERN</span> and{" "}
-                <span className="text-primary font-semibold">
                   React + Strapi
                 </span>
-                , gaining experience across both frontend and backend. Lately,
-                I've been diving deeper into{" "}
-                <span className="text-primary font-semibold">Next.js 15</span>
-                to build scalable, full-stack applications.
+                , and I&apos;m beginning to explore mobile UI development with
+                <span className="text-primary font-semibold"> Flutter</span>.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, I enjoy spending time with my family, and
-                staying curious about emerging web technologies. I’m a strong
-                believer in continuous learning and keeping up with the latest
-                tools and best practices.
+                Right now, I&apos;m looking for junior frontend roles where I
+                can keep growing, ship features in production, and learn from a
+                supportive team. Outside of coding, I enjoy spending time with
+                my family and staying curious about new tools, patterns, and web
+                technologies.
               </p>
             </div>
 
+            {/* Right column – skills + internships */}
             <div className="space-y-8 animate-fade-in-up">
               <div>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                  Profile
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Based in Stockholm, open to hybrid and remote‑friendly junior
+                  frontend roles.
+                </p>
+
                 <h3 className="text-xl font-semibold mb-4 text-foreground">
                   Technical Skills
                 </h3>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 gap-3 text-sm">
                   {[
                     "React",
-                    "TypeScript",
-                    "Redux Toolkit",
                     "Next.js",
-                    "Tailwind CSS",
-                    "Shadcn/UI",
-                    "Acertanity UI",
+                    "TypeScript",
                     "JavaScript",
-                    "MERN Stack",
+                    "Redux Toolkit",
+                    "Tailwind CSS",
+                    "shadcn/ui",
+                    "MERN stack",
                     "Strapi",
-                    "Git/GitHub",
+                    "Git & GitHub",
+                    "Flutter (beginner)",
                   ].map((skill, index) => (
                     <div
                       key={skill}
-                      className="bg-secondary/50 px-3 py-2 rounded-lg text-sm font-medium text-center hover:bg-secondary transition-colors"
+                      className="bg-secondary/50 px-3 py-2 rounded-lg font-medium text-center hover:bg-secondary transition-colors"
                       style={{ animationDelay: `${index * 100}ms` }}
                     >
                       {skill}
@@ -87,31 +101,36 @@ const About = () => {
                 </div>
               </div>
 
-              <div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">
-                  Education
+              <div className="space-y-3">
+                <h3 className="text-xl font-semibold text-foreground">
+                  Internships
                 </h3>
+
                 <div className="bg-secondary/30 p-4 rounded-lg border border-border">
                   <h4 className="font-semibold text-primary">
-                    Frontend Developer Program
+                    Frontend Developer Intern
                   </h4>
-                  <p className="text-muted-foreground">Hyper Island, Sweden</p>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    2024 - 2026
+                  <p className="text-muted-foreground">Swirl, Stockholm</p>
+                  <p className="text-sm text-muted-foreground">
+                    September 2025 – present
+                  </p>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Contributing to Will, a financial health web app built with
+                    Next.js, Neon, and Vercel, focusing on UI implementation and
+                    collaboration with the design and backend teams. 
                   </p>
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-4 text-foreground">
-                  Internship
-                </h3>
+
                 <div className="bg-secondary/30 p-4 rounded-lg border border-border">
                   <h4 className="font-semibold text-primary">
                     Frontend Developer Intern
                   </h4>
                   <p className="text-muted-foreground">YOICE, Stockholm</p>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    July 2025 - present
+                  <p className="text-sm text-muted-foreground">
+                    July 2025 – September 2025
+                  </p>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Working on developing AI-enhanced features and improving the user interface of our content generation tool.
                   </p>
                 </div>
               </div>
