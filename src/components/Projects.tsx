@@ -10,20 +10,29 @@ import { Github, ArrowUp } from "lucide-react";
 
 const projects = [
   {
+    title: "Will – Financial Health App (Swirl)",
+    description:
+      "Will is a financial health web app used by Brazilian users to assess their finances and find suitable solutions. Built at Swirl during my frontend internship, where I implemented key UI flows in Next.js and integrated them with Neon and Vercel deployments.",
+    image: "images/will.png",
+    tags: ["Next.js", "TypeScript", "Neon", "Vercel"],
+    github: "https://github.com/veuuapp/Web-MVP",
+    live: "https://usewill.com.br/en",
+    featured: true,
+  },
+  {
     title: "AutoThread Generator",
     description:
-      "An AI-powered web app that helps creators generate engaging Twitter threads from a topic and tone using Google Gemini API and also posts it on Twitter with one click.",
+      "Many creators struggle to turn ideas into consistent Twitter threads. I built an AI-powered web app that takes a topic and tone, generates a full thread with the Google Gemini API, and lets users post it to Twitter in one click, practicing auth, API integration, and motion UI.",
     image: "images/autothread.png",
     tags: ["Next.js", "Tailwind CSS", "NextAuth", "Framer Motion", "Google Gemini"],
     github: "https://github.com/priyanka8637kumari/Auto-thread-generator",
     live: "https://auto-thread-generator.vercel.app/",
     featured: true,
   },
- 
   {
     title: "Music School App",
     description:
-      "A modern and basic music academy website built with Nextjs, Acertainity UI and Tailwind CSS. Features include beautiful visualizations, smooth animations and responsive design.",
+      "Small music schools often need a simple way to present their courses and stand out online. I designed and built a modern marketing site with Next.js, Acertainity UI, and Tailwind CSS, focusing on clean layout, animations, and fully responsive sections.",
     image: "images/music-app.png",
     tags: ["Next.js", "Acertainity UI", "Tailwind CSS"],
     github: "https://github.com/priyanka8637kumari/Music-School-App",
@@ -33,17 +42,17 @@ const projects = [
   {
     title: "MoneyMate App",
     description:
-      "A full-stack expense tracker application built with the MERN stack. Features include secure login and CRUD implementation of transactions - all in a clean, intuitive interface.",
+      "People need a simple way to track everyday expenses. I built a full-stack MERN expense tracker with secure login and complete CRUD for transactions in a clean dashboard.",
     image: "images/moneymate.png",
     tags: ["React", "Express", "MongoDB"],
     github: "https://github.com/priyanka8637kumari/Expense-Tracker-MERN-",
     live: "https://moneymate4u.netlify.app/",
     featured: false,
   },
-   {
+  {
     title: "Anonymous Inbox",
     description:
-      "A web app that lets users send and receive anonymous messages built with Next.js (App Router), MongoDB and NextAuth. It focuses on privacy, simplicity, and user-friendly interaction.",
+      "Sharing honest feedback can be hard when identity is visible. This app lets users send and receive anonymous messages using Next.js (App Router), MongoDB, and NextAuth, focusing on a minimal, privacy-first experience.",
     image: "images/Anonymous-Inbox.png",
     tags: ["Next.js", "MongoDB", "NextAuth", "Resend"],
     github: "https://github.com/priyanka8637kumari/Anonymous-Inbox",
@@ -53,9 +62,9 @@ const projects = [
   {
     title: "Hyper Island Evolution",
     description:
-      "A browser-based WebXR experience built using A-Frame that immerses the user in a series of 3D models and custom VR interactions.",
+      "Many portfolios are flat; this WebXR experience invites users into an interactive 3D journey. Built with A‑Frame, it showcases custom VR interactions and animated scenes in the browser.",
     image: "images/webXR.png",
-    tags: ["A-frame", "HTML", "CSS", "JavaScript"],
+    tags: ["A-Frame", "HTML", "CSS", "JavaScript"],
     github: "https://github.com/priyanka8637kumari/HyperIsalnd-Evolution",
     live: "https://hievolution.netlify.app/",
     featured: false,
@@ -63,7 +72,7 @@ const projects = [
   {
     title: "Todo App with Redux Toolkit",
     description:
-      "A simple yet functional To-Do List App using Redux Toolkit to understand state management, slices, and async actions. .",
+      "Managing state in growing apps can quickly become messy. This to‑do list app uses Redux Toolkit slices and async thunks to practice predictable state management in a small, focused project.",
     image: "images/Todo.png",
     tags: ["React", "Redux Toolkit", "Tailwind CSS"],
     github: "https://github.com/priyanka8637kumari/Todo-App-with-Redux-Toolkit",
@@ -73,9 +82,8 @@ const projects = [
   {
     title: "Cocktail Kungen App",
     description:
-      "A web application that allows users to explore a collection of cocktail recipes, built using TheCocktailDB API to fetch cocktail data dynamically.",
-    image:
-      "images/recipes.png",
+      "Users want to quickly explore new cocktails without reading long blogs. This app consumes TheCocktailDB API to search and filter recipes with a simple React + Context state layer.",
+    image: "images/recipes.png",
     tags: ["React", "Context API", "API", "CSS"],
     github: "https://github.com/priyanka8637kumari/Cocktail-Recipes-App",
     live: "https://cocktail-kungen.netlify.app/",
@@ -84,9 +92,8 @@ const projects = [
   {
     title: "Tic Tac Toe Game",
     description:
-      "A classic Tic Tac Toe game built with HTML, CSS, and JavaScript. Features include a simple UI, game logic.",
-    image:
-      "images/tictactoe.png",
+      "Classic games are a great way to practice core JavaScript. This Tic Tac Toe implementation focuses on clean game logic and a simple, accessible UI with HTML, CSS, and JavaScript.",
+    image: "images/tictactoe.png",
     tags: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/priyanka8637kumari/Tic-Tac-Toe-Project",
     live: "https://bucolic-crisp-8c9366.netlify.app/",
@@ -106,10 +113,11 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my recent work, highlighting my expertise in modern
-            web development and user interface design.
+            A selection of real client work and personal projects that show how I
+            design, build, and ship web applications with React, Next.js, and
+            modern tooling.
           </p>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-6"></div>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-6" />
         </div>
 
         {/* Featured Projects */}
@@ -126,7 +134,7 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <CardHeader>
                 <CardTitle className="text-xl group-hover:text-primary transition-colors">
