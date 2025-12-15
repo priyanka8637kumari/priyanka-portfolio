@@ -156,7 +156,7 @@ const Contact = () => {
             <div className="pt-1">
               <Button size="lg" asChild className="w-full md:w-auto">
                 <a 
-                  href="/resume/Priyanka_Resume.pdf" 
+                  href="/resume/priyanka.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center"
