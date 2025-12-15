@@ -38,33 +38,43 @@
   }
 
   .light {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Sophisticated off-white with subtle blue undertone */
+    --background: 214 20% 97.5%; /* Warmer, more refined than pure grey */
+    --foreground: 222 47% 11%; /* Deep slate for excellent readability */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Crisp white cards with subtle elevation */
+    --card: 0 0% 100%; /* Pure white for contrast */
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 210 40% 98%;
+    /* Vibrant yet professional gradient-ready primary */
+    --primary: 217 91% 60%; /* Rich blue - #2563EB */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft secondary with subtle warmth */
+    --secondary: 214 31% 92%; /* Slightly warmer grey */
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Refined muted tones for depth */
+    --muted: 214 31% 92%; /* Soft background for subtle sections */
+    --muted-foreground: 215 20% 42%; /* Medium grey for secondary text */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Premium violet accent for personality */
+    --accent: 262 83% 65%; /* Brighter violet #8B5CF6 for pop */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Modern error state */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Subtle but visible borders */
+    --border: 214 31% 87%; /* Softer, more refined border */
+    --input: 214 31% 87%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
   }
 }
 
@@ -90,5 +100,34 @@
   
   .bg-gradient-mesh {
     background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(217.2 32.6% 17.5%) 100%);
+  }
+
+  /* Enhanced light mode utilities */
+  .light .bg-gradient-mesh {
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(214 31% 92%) 100%);
+  }
+
+  /* Subtle glass effect for light mode cards */
+  .light .glass-effect {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(214, 224, 235, 0.5);
+  }
+
+  /* Elegant shadow for light mode */
+  .light .card-shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .light .card-shadow-hover:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(37, 99, 235, 0.1);
+  }
+
+  /* Refined gradient text for light mode */
+  .light .text-gradient {
+    background: linear-gradient(135deg, #2563EB 0%, #7C3AED 50%, #DB2777 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
