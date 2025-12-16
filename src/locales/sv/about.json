@@ -1,0 +1,43 @@
+{
+  "title": "Om mig",
+  "paragraphs": {
+    "intro": "Jag är en frontend-utvecklare baserad i Stockholm, studerar för närvarande på <highlight>Hyper Island</highlight> och praktiserar som frontend-utvecklare på <highlight>Swirl</highlight>. På Swirl bidrar jag till <link>Will</link>, en finansiell hälsowebbapp som används av riktiga kunder, vilket har gett mig erfarenhet av produktionsdistributioner och tvärfunktionellt samarbete.",
+    "skills": "Jag tycker om att förvandla idéer till snabba, tillgängliga gränssnitt med <highlight>React</highlight>, <highlight>Next.js</highlight>, <highlight>TypeScript</highlight> och moderna UI-bibliotek som <highlight>Tailwind CSS</highlight> och <highlight>shadcn/ui</highlight>. Jag har också byggt full‑stack-projekt med <highlight>MERN stack</highlight> och <highlight>React + Strapi</highlight>, och jag börjar utforska mobil UI-utveckling med <highlight>Flutter</highlight>.",
+    "goals": "Just nu letar jag efter junior frontend-roller där jag kan fortsätta växa, leverera funktioner i produktion och lära mig av ett stödjande team. Utanför kodning tycker jag om att spendera tid med min familj och hålla mig nyfiken på nya verktyg, mönster och webbteknologier."
+  },
+  "profile": {
+    "title": "Profil",
+    "description": "Baserad i Stockholm, öppen för hybrid- och distansvänliga junior frontend-roller."
+  },
+  "skills": {
+    "title": "Tekniska färdigheter",
+    "list": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "MERN stack",
+      "Strapi",
+      "Git & GitHub",
+      "Flutter (nybörjare)"
+    ]
+  },
+  "internships": {
+    "title": "Praktikplatser",
+    "swirl": {
+      "title": "Frontend-utvecklare praktikant",
+      "company": "Swirl, Stockholm",
+      "period": "September 2025 – nuvarande",
+      "description": "Bidrar till Will, en finansiell hälsowebbapp byggd med Next.js, Neon och Vercel, med fokus på UI-implementering och samarbete med design- och backend-teamen."
+    },
+    "yoice": {
+      "title": "Frontend-utvecklare praktikant",
+      "company": "YOICE, Stockholm",
+      "period": "Juli 2025 – September 2025",
+      "description": "Arbetar med att utveckla AI-förbättrade funktioner och förbättra användargränssnittet för vårt innehållsgenereringsverktyg."
+    }
+  }
+}

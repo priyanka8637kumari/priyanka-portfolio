@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "name": "Priyanka",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "letsTalk": "Let's Talk"
+  },
+  "theme": {
+    "toggleTheme": "Toggle theme"
+  }
+}

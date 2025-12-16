@@ -1,0 +1,10 @@
+{
+  "name": "Priyanka",
+  "tagline": "Frontend-utvecklare baserad i Stockholm",
+  "copyright": "© {{year}} Priyanka. Byggd med React, TypeScript och Tailwind CSS.",
+  "socialLinks": {
+    "github": "GitHub-profil",
+    "email": "E-postkontakt",
+    "linkedin": "LinkedIn-profil"
+  }
+}

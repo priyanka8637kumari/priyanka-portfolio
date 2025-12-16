@@ -1,0 +1,10 @@
+{
+  "name": "Priyanka",
+  "tagline": "Frontend Developer based in Stockholm",
+  "copyright": "© {{year}} Priyanka. Built with React, TypeScript, and Tailwind CSS.",
+  "socialLinks": {
+    "github": "GitHub Profile",
+    "email": "Email Contact",
+    "linkedin": "LinkedIn Profile"
+  }
+}

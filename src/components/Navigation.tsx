@@ -3,10 +3,13 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useTheme } from '@/components/ThemeProvider';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, setTheme } = useTheme();
+  const { t } = useTranslation('common');
 
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
@@ -28,7 +31,7 @@ const Navigation = () => {
             onClick={() => scrollToSection('hero')}
             className="text-xl font-bold text-gradient hover:opacity-80 transition-opacity cursor-pointer"
           >
-            Priyanka
+            {t('nav.name')}
           </button>
 
           {/* Desktop Navigation */}
@@ -37,31 +40,32 @@ const Navigation = () => {
               onClick={() => scrollToSection('about')}
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              About
+              {t('nav.about')}
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              Projects
+              {t('nav.projects')}
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              Contact
+              {t('nav.contact')}
             </button>
+            <LanguageSwitcher />
             <Button 
               variant="ghost" 
               size="icon"
               onClick={toggleTheme}
               className="rounded-full"
-              aria-label="Toggle theme"
+              aria-label={t('theme.toggleTheme')}
             >
               {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
             <Button size="sm" onClick={() => scrollToSection('contact')}>
-              Let's Talk
+              {t('nav.letsTalk')}
             </Button>
           </div>
 
@@ -72,7 +76,7 @@ const Navigation = () => {
               size="icon"
               onClick={toggleTheme}
               className="rounded-full"
-              aria-label="Toggle theme"
+              aria-label={t('theme.toggleTheme')}
             >
               {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
@@ -93,26 +97,26 @@ const Navigation = () => {
               onClick={() => scrollToSection('about')}
               className="block w-full text-left text-muted-foreground hover:text-foreground transition-colors"
             >
-              About
+              {t('nav.about')}
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
               className="block w-full text-left text-muted-foreground hover:text-foreground transition-colors"
             >
-              Projects
+              {t('nav.projects')}
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
               className="block w-full text-left text-muted-foreground hover:text-foreground transition-colors"
             >
-              Contact
+              {t('nav.contact')}
             </button>
             <Button 
               size="sm" 
               onClick={() => scrollToSection('contact')}
               className="w-full"
             >
-              Let's Talk
+              {t('nav.letsTalk')}
             </Button>
           </div>
         )}

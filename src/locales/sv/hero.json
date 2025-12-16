@@ -1,0 +1,17 @@
+{
+  "badge": "Öppen för frontend-utvecklarroller",
+  "greeting": "Hej, jag är",
+  "name": "Priyanka",
+  "intro": "Stockholm-baserad frontend-utvecklare som studerar på <highlight>Hyper Island</highlight> och som för närvarande praktiserar på <highlight>Swirl</highlight>. På Swirl bidrog jag till <link>Will</link>, en finansiell hälsowebbapp byggd med <highlight>Next.js</highlight>, <highlight>Neon</highlight> och <highlight>Vercel</highlight>. Jag älskar att bygga moderna, användarfokuserade gränssnitt med <highlight>React</highlight> och <highlight>TypeScript</highlight>, och jag börjar bygga mobila gränssnitt med <highlight>Flutter</highlight>.",
+  "focusTitle": "Nuvarande fokus",
+  "focusDescription": "Förbättrar Will i produktion, lär mig Flutter genom att lägga till nya skärmar i min första mobilapp och fördjupar min erfarenhet med Next.js, TypeScript och moderna distributionsverktyg som Vercel och Neon.",
+  "buttons": {
+    "viewWork": "Se mitt arbete",
+    "getInTouch": "Kontakta mig"
+  },
+  "socialLinks": {
+    "github": "GitHub-profil",
+    "email": "E-postkontakt",
+    "linkedin": "LinkedIn-profil"
+  }
+}

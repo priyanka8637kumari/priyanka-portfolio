@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, Mail, ArrowDown, Linkedin } from "lucide-react";
 import { BackgroundBeams } from "./ui/background-beams";
+import { useTranslation, Trans } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation('hero');
   const scrollToProjects = () => {
     const element = document.getElementById("projects");
     if (element) {
@@ -43,42 +45,35 @@ const Hero = () => {
               className="px-4 py-2 text-sm font-medium border-primary/20 bg-primary/5 hover:bg-primary/10 transition-colors"
             >
               <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse" />
-              Open to Frontend Developer Roles
+              {t('badge')}
             </Badge>
           </div>
 
           {/* Main heading */}
           <div className="space-y-4 mb-8">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-              Hi, I'm{" "}
+              {t('greeting')}{" "}
               <span className="bg-gradient-to-r from-primary via-blue-600 to-purple-600 bg-clip-text text-transparent animate-gradient-shift bg-[length:200%_200%]">
-                Priyanka
+                {t('name')}
               </span>
             </h1>
 
             <p className="text-sm md:text-lg text-muted-foreground font-light leading-relaxed max-w-4xl mx-auto">
-              Stockholm-based frontend developer studying at{" "}
-              <span className="text-primary font-medium">Hyper Island</span> and
-              currently interning at{" "}
-              <span className="text-primary font-medium">Swirl</span>. At Swirl,
-              I contributed to{" "}
-              <a
-                href="https://usewill.com.br/en"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary font-medium underline underline-offset-4 decoration-primary/40 hover:decoration-primary"
-              >
-                Will
-              </a>
-              , a financial health web app built with{" "}
-              <span className="text-primary font-medium">Next.js</span>,{" "}
-              <span className="text-primary font-medium">Neon</span>, and{" "}
-              <span className="text-primary font-medium">Vercel</span>. I
-              love building modern, user-focused interfaces with{" "}
-              <span className="text-primary font-medium">React</span> and{" "}
-              <span className="text-primary font-medium">TypeScript</span>, and
-              I am starting to build mobile UIs with{" "}
-              <span className="text-primary font-medium">Flutter</span>.
+              <Trans
+                i18nKey="intro"
+                ns="hero"
+                components={{
+                  highlight: <span className="text-primary font-medium" />,
+                  link: (
+                    <a
+                      href="https://usewill.com.br/en"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary font-medium underline underline-offset-4 decoration-primary/40 hover:decoration-primary"
+                    />
+                  ),
+                }}
+              />
             </p>
           </div>
 
@@ -86,13 +81,10 @@ const Hero = () => {
           <div className="mb-8 max-w-2xl mx-auto">
             <div className="bg-card/60 backdrop-blur-sm border border-border/60 rounded-lg p-6 hover:bg-card/80 hover:border-border/80 transition-all duration-300 shadow-md hover:shadow-lg">
               <h3 className="text-lg font-semibold mb-3 text-primary">
-                Current Focus
+                {t('focusTitle')}
               </h3>
               <p className="text-base text-foreground leading-relaxed">
-                Improving Will in production, learning Flutter by adding new
-                screens to my first mobile app, and deepening my experience with
-                Next.js, TypeScript, and modern deployment tools like Vercel and
-                Neon.
+                {t('focusDescription')}
               </p>
             </div>
           </div>
@@ -104,7 +96,7 @@ const Hero = () => {
               onClick={scrollToProjects}
               className="text-base px-6 py-3 bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              View My Work
+              {t('buttons.viewWork')}
               <ArrowDown className="ml-2 h-4 w-4" />
             </Button>
             <Button
@@ -114,7 +106,7 @@ const Hero = () => {
               className="text-base px-6 py-3 border-primary/20 hover:bg-primary/5 transition-all duration-300"
             >
               <Mail className="mr-2 h-4 w-4" />
-              Get In Touch
+              {t('buttons.getInTouch')}
             </Button>
           </div>
 
@@ -131,14 +123,14 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-muted/30 hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
-              aria-label="GitHub Profile"
+              aria-label={t('socialLinks.github')}
             >
               <Github className="h-5 w-5" />
             </a>
             <a
               href="mailto:prisri0801@gmail.com"
               className="p-3 rounded-full bg-muted/30 hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
-              aria-label="Email Contact"
+              aria-label={t('socialLinks.email')}
             >
               <Mail className="h-5 w-5" />
             </a>
@@ -147,7 +139,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-muted/30 hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
-              aria-label="LinkedIn Profile"
+              aria-label={t('socialLinks.linkedin')}
             >
               <Linkedin className="h-5 w-5" />
             </a>

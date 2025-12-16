@@ -1,0 +1,28 @@
+{
+  "title": "Låt oss arbeta tillsammans",
+  "subtitle": "Har du ett projekt i åtanke eller vill diskutera möjligheter? Jag skulle gärna höra från dig.",
+  "getInTouch": "Hör av dig",
+  "description": "Skicka mig ett meddelande så sätter vi igång en konversation!",
+  "email": "E-post",
+  "github": "GitHub",
+  "linkedin": "LinkedIn",
+  "formTitle": "Skicka mig ett meddelande",
+  "formDescription": "Fyll i formuläret nedan så återkommer jag till dig så snart som möjligt.",
+  "form": {
+    "name": "Namn",
+    "namePlaceholder": "Ditt fullständiga namn",
+    "email": "E-post",
+    "emailPlaceholder": "din.epost@exempel.se",
+    "message": "Meddelande",
+    "messagePlaceholder": "Berätta om ditt projekt eller säg bara hej...",
+    "send": "Skicka meddelande",
+    "sending": "Skickar..."
+  },
+  "toast": {
+    "successTitle": "Meddelandet skickades!",
+    "successDescription": "Tack för att du hörde av dig. Jag återkommer till dig snart.",
+    "errorTitle": "Kunde inte skicka meddelandet",
+    "errorDescription": "Vänligen försök igen eller kontakta mig direkt via e-post."
+  },
+  "downloadResume": "Ladda ner CV"
+}

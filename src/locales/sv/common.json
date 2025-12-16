@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "name": "Priyanka",
+    "about": "Om mig",
+    "projects": "Projekt",
+    "contact": "Kontakt",
+    "letsTalk": "Låt oss prata"
+  },
+  "theme": {
+    "toggleTheme": "Växla tema"
+  }
+}

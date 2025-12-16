@@ -1,0 +1,28 @@
+{
+  "title": "Let's Work Together",
+  "subtitle": "Have a project in mind or want to discuss opportunities? I'd love to hear from you.",
+  "getInTouch": "Get in Touch",
+  "description": "Drop me a message and let's start a conversation!",
+  "email": "Email",
+  "github": "GitHub",
+  "linkedin": "LinkedIn",
+  "formTitle": "Send me a message",
+  "formDescription": "Fill out the form below and I'll get back to you as soon as possible.",
+  "form": {
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "message": "Message",
+    "messagePlaceholder": "Tell me about your project or just say hello...",
+    "send": "Send Message",
+    "sending": "Sending..."
+  },
+  "toast": {
+    "successTitle": "Message sent successfully!",
+    "successDescription": "Thank you for reaching out. I'll get back to you soon.",
+    "errorTitle": "Failed to send message",
+    "errorDescription": "Please try again or contact me directly via email."
+  },
+  "downloadResume": "Download Resume"
+}

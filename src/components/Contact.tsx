@@ -7,9 +7,11 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Github, ArrowUp, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const { t, i18n } = useTranslation('contact');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,6 +19,9 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  
+  // Get the correct resume based on current language
+  const resumePath = i18n.language === 'sv' ? '/resume/priyankaSV.pdf' : '/resume/priyankaEN.pdf';
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -49,14 +54,14 @@ const Contact = () => {
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
       
       toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+        title: t('toast.successTitle'),
+        description: t('toast.successDescription'),
       });
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       toast({
-        title: "Failed to send message",
-        description: "Please try again or contact me directly via email.",
+        title: t('toast.errorTitle'),
+        description: t('toast.errorDescription'),
         variant: "destructive",
       });
     } finally {
@@ -69,11 +74,10 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
-            Let's Work Together
+            {t('title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or want to discuss opportunities? 
-            I'd love to hear from you.
+            {t('subtitle')}
           </p>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-6"></div>
         </div>
@@ -82,11 +86,9 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8 animate-fade-in-up">
             <div>
-              <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
+              <h3 className="text-2xl font-bold mb-2">{t('getInTouch')}</h3>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                {/* I'm always open to discussing new opportunities, collaborating on 
-                interesting projects, or simply connecting with fellow developers.  */}
-                Drop me a message and let's start a conversation!
+                {t('description')}
               </p>
             </div>
 
@@ -98,7 +100,7 @@ const Contact = () => {
                       <Mail className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold">Email</h4>
+                      <h4 className="font-semibold">{t('email')}</h4>
                       <a 
                         href="mailto:prisri0801@gmail.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
@@ -117,7 +119,7 @@ const Contact = () => {
                       <Github className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold">GitHub</h4>
+                      <h4 className="font-semibold">{t('github')}</h4>
                       <a 
                         href="https://github.com/priyanka8637kumari"
                         target="_blank"
@@ -138,7 +140,7 @@ const Contact = () => {
                       <Linkedin className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold">Linkedin</h4>
+                      <h4 className="font-semibold">{t('linkedin')}</h4>
                       <a 
                         href="https://www.linkedin.com/in/priyanka-kumari-995901274/"
                         target="_blank"
@@ -156,13 +158,13 @@ const Contact = () => {
             <div className="pt-1">
               <Button size="lg" asChild className="w-full md:w-auto">
                 <a 
-                  href="/resume/priyanka.pdf" 
+                  href={resumePath}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center"
                 >
                   <ArrowUp className="mr-2 h-4 w-4 rotate-45" />
-                  Download Resume
+                  {t('downloadResume')}
                 </a>
               </Button>
             </div>
@@ -171,20 +173,20 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="bg-background/50 backdrop-blur-sm border-border animate-scale-in">
             <CardHeader>
-              <CardTitle>Send me a message</CardTitle>
+              <CardTitle>{t('formTitle')}</CardTitle>
               <CardDescription>
-                Fill out the form below and I'll get back to you as soon as possible.
+                {t('formDescription')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
+                  <Label htmlFor="name">{t('form.name')}</Label>
                   <Input
                     id="name"
                     name="name"
                     type="text"
-                    placeholder="Your full name"
+                    placeholder={t('form.namePlaceholder')}
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -193,12 +195,12 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email">{t('form.email')}</Label>
                   <Input
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="your.email@example.com"
+                    placeholder={t('form.emailPlaceholder')}
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -207,11 +209,11 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">{t('form.message')}</Label>
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="Tell me about your project or just say hello..."
+                    placeholder={t('form.messagePlaceholder')}
                     value={formData.message}
                     onChange={handleChange}
                     required
@@ -226,7 +228,7 @@ const Contact = () => {
                   size="lg"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? t('form.sending') : t('form.send')}
                 </Button>
               </form>
             </CardContent>

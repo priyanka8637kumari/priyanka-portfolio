@@ -7,101 +7,85 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, ArrowUp } from "lucide-react";
-
-const projects = [
-  {
-    title: "Will – Financial Health App (Swirl)",
-    description:
-      "Will is a financial health web app used by Brazilian users to assess their finances and find suitable solutions. Built at Swirl during my frontend internship, where I implemented key UI flows in Next.js and integrated them with Neon and Vercel deployments.",
-    image: "images/will.png",
-    tags: ["Next.js", "TypeScript", "Neon", "Vercel"],
-    github: "https://github.com/veuuapp/Web-MVP",
-    live: "https://usewill.com.br/en",
-    featured: true,
-  },
-  {
-    title: "AutoThread Generator",
-    description:
-      "Many creators struggle to turn ideas into consistent Twitter threads. I built an AI-powered web app that takes a topic and tone, generates a full thread with the Google Gemini API, and lets users post it to Twitter in one click, practicing auth, API integration, and motion UI.",
-    image: "images/autothread.png",
-    tags: ["Next.js", "Tailwind CSS", "NextAuth", "Framer Motion", "Google Gemini"],
-    github: "https://github.com/priyanka8637kumari/Auto-thread-generator",
-    live: "https://auto-thread-generator.vercel.app/",
-    featured: true,
-  },
-  {
-    title: "Music School App",
-    description:
-      "Small music schools often need a simple way to present their courses and stand out online. I designed and built a modern marketing site with Next.js, Acertainity UI, and Tailwind CSS, focusing on clean layout, animations, and fully responsive sections.",
-    image: "images/music-app.png",
-    tags: ["Next.js", "Acertainity UI", "Tailwind CSS"],
-    github: "https://github.com/priyanka8637kumari/Music-School-App",
-    live: "https://music-school-app06.vercel.app/",
-    featured: true,
-  },
-  {
-    title: "MoneyMate App",
-    description:
-      "People need a simple way to track everyday expenses. I built a full-stack MERN expense tracker with secure login and complete CRUD for transactions in a clean dashboard.",
-    image: "images/moneymate.png",
-    tags: ["React", "Express", "MongoDB"],
-    github: "https://github.com/priyanka8637kumari/Expense-Tracker-MERN-",
-    live: "https://moneymate4u.netlify.app/",
-    featured: false,
-  },
-  {
-    title: "Anonymous Inbox",
-    description:
-      "Sharing honest feedback can be hard when identity is visible. This app lets users send and receive anonymous messages using Next.js (App Router), MongoDB, and NextAuth, focusing on a minimal, privacy-first experience.",
-    image: "images/Anonymous-Inbox.png",
-    tags: ["Next.js", "MongoDB", "NextAuth", "Resend"],
-    github: "https://github.com/priyanka8637kumari/Anonymous-Inbox",
-    live: "https://anonymous-inbox.netlify.app/",
-    featured: false,
-  },
-  {
-    title: "Hyper Island Evolution",
-    description:
-      "Many portfolios are flat; this WebXR experience invites users into an interactive 3D journey. Built with A‑Frame, it showcases custom VR interactions and animated scenes in the browser.",
-    image: "images/webXR.png",
-    tags: ["A-Frame", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/priyanka8637kumari/HyperIsalnd-Evolution",
-    live: "https://hievolution.netlify.app/",
-    featured: false,
-  },
-  {
-    title: "Todo App with Redux Toolkit",
-    description:
-      "Managing state in growing apps can quickly become messy. This to‑do list app uses Redux Toolkit slices and async thunks to practice predictable state management in a small, focused project.",
-    image: "images/Todo.png",
-    tags: ["React", "Redux Toolkit", "Tailwind CSS"],
-    github: "https://github.com/priyanka8637kumari/Todo-App-with-Redux-Toolkit",
-    live: "https://todosreduxtoolkit.netlify.app/",
-    featured: false,
-  },
-  {
-    title: "Cocktail Kungen App",
-    description:
-      "Users want to quickly explore new cocktails without reading long blogs. This app consumes TheCocktailDB API to search and filter recipes with a simple React + Context state layer.",
-    image: "images/recipes.png",
-    tags: ["React", "Context API", "API", "CSS"],
-    github: "https://github.com/priyanka8637kumari/Cocktail-Recipes-App",
-    live: "https://cocktail-kungen.netlify.app/",
-    featured: false,
-  },
-  {
-    title: "Tic Tac Toe Game",
-    description:
-      "Classic games are a great way to practice core JavaScript. This Tic Tac Toe implementation focuses on clean game logic and a simple, accessible UI with HTML, CSS, and JavaScript.",
-    image: "images/tictactoe.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/priyanka8637kumari/Tic-Tac-Toe-Project",
-    live: "https://bucolic-crisp-8c9366.netlify.app/",
-    featured: false,
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const { t } = useTranslation('projects');
+  
+  const projects = [
+    {
+      key: "will",
+      image: "images/will.png",
+      tags: ["Next.js", "TypeScript", "Neon", "Vercel"],
+      github: "https://github.com/veuuapp/Web-MVP",
+      live: "https://usewill.com.br/en",
+      featured: true,
+    },
+    {
+      key: "autothread",
+      image: "images/autothread.png",
+      tags: ["Next.js", "Tailwind CSS", "NextAuth", "Framer Motion", "Google Gemini"],
+      github: "https://github.com/priyanka8637kumari/Auto-thread-generator",
+      live: "https://auto-thread-generator.vercel.app/",
+      featured: true,
+    },
+    {
+      key: "musicSchool",
+      image: "images/music-app.png",
+      tags: ["Next.js", "Acertainity UI", "Tailwind CSS"],
+      github: "https://github.com/priyanka8637kumari/Music-School-App",
+      live: "https://music-school-app06.vercel.app/",
+      featured: true,
+    },
+    {
+      key: "moneymate",
+      image: "images/moneymate.png",
+      tags: ["React", "Express", "MongoDB"],
+      github: "https://github.com/priyanka8637kumari/Expense-Tracker-MERN-",
+      live: "https://moneymate4u.netlify.app/",
+      featured: false,
+    },
+    {
+      key: "anonymousInbox",
+      image: "images/Anonymous-Inbox.png",
+      tags: ["Next.js", "MongoDB", "NextAuth", "Resend"],
+      github: "https://github.com/priyanka8637kumari/Anonymous-Inbox",
+      live: "https://anonymous-inbox.netlify.app/",
+      featured: false,
+    },
+    {
+      key: "hyperIsland",
+      image: "images/webXR.png",
+      tags: ["A-Frame", "HTML", "CSS", "JavaScript"],
+      github: "https://github.com/priyanka8637kumari/HyperIsalnd-Evolution",
+      live: "https://hievolution.netlify.app/",
+      featured: false,
+    },
+    {
+      key: "todoApp",
+      image: "images/Todo.png",
+      tags: ["React", "Redux Toolkit", "Tailwind CSS"],
+      github: "https://github.com/priyanka8637kumari/Todo-App-with-Redux-Toolkit",
+      live: "https://todosreduxtoolkit.netlify.app/",
+      featured: false,
+    },
+    {
+      key: "cocktailApp",
+      image: "images/recipes.png",
+      tags: ["React", "Context API", "API", "CSS"],
+      github: "https://github.com/priyanka8637kumari/Cocktail-Recipes-App",
+      live: "https://cocktail-kungen.netlify.app/",
+      featured: false,
+    },
+    {
+      key: "ticTacToe",
+      image: "images/tictactoe.png",
+      tags: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/priyanka8637kumari/Tic-Tac-Toe-Project",
+      live: "https://bucolic-crisp-8c9366.netlify.app/",
+      featured: false,
+    },
+  ];
   const featuredProjects = projects.filter((project) => project.featured);
   const otherProjects = projects.filter((project) => !project.featured);
 
@@ -110,12 +94,10 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
-            Featured Projects
+            {t('title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A selection of real client work and personal projects that show how I
-            design, build, and ship web applications with React, Next.js, and
-            modern tooling.
+            {t('subtitle')}
           </p>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-6" />
         </div>
@@ -124,24 +106,24 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {featuredProjects.map((project, index) => (
             <Card
-              key={project.title}
+              key={project.key}
               className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-border bg-card/50 backdrop-blur-sm animate-scale-in"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="relative overflow-hidden rounded-t-lg">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={t(`projectsList.${project.key}.title`)}
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <CardHeader>
                 <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                  {project.title}
+                  {t(`projectsList.${project.key}.title`)}
                 </CardTitle>
                 <CardDescription className="text-base">
-                  {project.description}
+                  {t(`projectsList.${project.key}.description`)}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -163,7 +145,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       <ArrowUp className="mr-2 h-4 w-4 rotate-45" />
-                      Live Demo
+                      {t('buttons.liveDemo')}
                     </a>
                   </Button>
                   <Button
@@ -178,7 +160,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       <Github className="mr-2 h-4 w-4" />
-                      Code
+                      {t('buttons.code')}
                     </a>
                   </Button>
                 </div>
@@ -190,28 +172,28 @@ const Projects = () => {
         {/* Other Projects */}
         <div>
           <h3 className="text-2xl font-bold mb-8 text-center">
-            Other Projects
+            {t('otherProjects')}
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {otherProjects.map((project, index) => (
               <Card
-                key={project.title}
+                key={project.key}
                 className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border bg-card/30 backdrop-blur-sm animate-fade-in-up"
                 style={{ animationDelay: `${(index + 2) * 150}ms` }}
               >
                 <div className="relative overflow-hidden rounded-t-lg">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={t(`projectsList.${project.key}.title`)}
                     className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
                 <CardHeader className="pb-3">
                   <CardTitle className="text-lg group-hover:text-primary transition-colors">
-                    {project.title}
+                    {t(`projectsList.${project.key}.title`)}
                   </CardTitle>
                   <CardDescription className="text-sm">
-                    {project.description}
+                    {t(`projectsList.${project.key}.description`)}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -238,7 +220,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                       >
                         <ArrowUp className="mr-1 h-3 w-3 rotate-45" />
-                        Demo
+                        {t('buttons.demo')}
                       </a>
                     </Button>
                     <Button
@@ -253,7 +235,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                       >
                         <Github className="mr-1 h-3 w-3" />
-                        Code
+                        {t('buttons.code')}
                       </a>
                     </Button>
                   </div>
@@ -271,7 +253,7 @@ const Projects = () => {
               rel="noopener noreferrer"
             >
               <Github className="mr-2 h-4 w-4" />
-              View All Projects on GitHub
+              {t('buttons.viewAllGithub')}
             </a>
           </Button>
         </div>
