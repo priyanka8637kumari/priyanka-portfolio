@@ -1,7 +1,7 @@
 {
   "title": "Om mig",
   "paragraphs": {
-    "intro": "Jag är en frontend-utvecklare baserad i Stockholm, studerar för närvarande på <highlight>Hyper Island</highlight> och praktiserar som frontend-utvecklare på <highlight>Swirl</highlight>. På Swirl bidrar jag till <link>Will</link>, en finansiell hälsowebbapp som används av riktiga kunder, vilket har gett mig erfarenhet av produktionsdistributioner och tvärfunktionellt samarbete.",
+    "intro": "Jag är en frontend-utvecklare baserad i Stockholm, studerar för närvarande på <highlight>Hyper Island</highlight> och praktiserar som frontend-utvecklare på <highlight>Swirl</highlight>. På Swirl bidrar jag till <link>Haus</link>, en finansiell hälsowebbapp som används av riktiga kunder, vilket har gett mig erfarenhet av produktionsdistributioner och tvärfunktionellt samarbete.",
     "skills": "Jag tycker om att förvandla idéer till snabba, tillgängliga gränssnitt med <highlight>React</highlight>, <highlight>Next.js</highlight>, <highlight>TypeScript</highlight> och moderna UI-bibliotek som <highlight>Tailwind CSS</highlight> och <highlight>shadcn/ui</highlight>. Jag har också byggt full‑stack-projekt med <highlight>MERN stack</highlight> och <highlight>React + Strapi</highlight>, och jag börjar utforska mobil UI-utveckling med <highlight>Flutter</highlight>.",
     "goals": "Just nu letar jag efter junior frontend-roller där jag kan fortsätta växa, leverera funktioner i produktion och lära mig av ett stödjande team. Utanför kodning tycker jag om att spendera tid med min familj och hålla mig nyfiken på nya verktyg, mönster och webbteknologier."
   },
@@ -31,7 +31,7 @@
       "title": "Frontend-utvecklare praktikant",
       "company": "Swirl, Stockholm",
       "period": "September 2025 – nuvarande",
-      "description": "Bidrar till Will, en finansiell hälsowebbapp byggd med Next.js, Neon och Vercel, med fokus på UI-implementering och samarbete med design- och backend-teamen."
+      "description": "Bidrar till Haus, en finansiell hälsowebbapp byggd med Next.js, Neon och Vercel, med fokus på UI-implementering och samarbete med design- och backend-teamen."
     },
     "yoice": {
       "title": "Frontend-utvecklare praktikant",

@@ -9,9 +9,9 @@
     "viewAllGithub": "Visa alla projekt på GitHub"
   },
   "projectsList": {
-    "will": {
-      "title": "Will – Finansiell Hälsoapp (Swirl)",
-      "description": "Will är en finansiell hälsowebbapp som används av brasilianska användare för att bedöma sin ekonomi och hitta lämpliga lösningar. Byggd på Swirl under min frontend-praktik, där jag implementerade viktiga UI-flöden i Next.js och integrerade dem med Neon- och Vercel-distributioner."
+    "haus": {
+      "title": "Haus – Finansiell Hälsoapp (Swirl)",
+      "description": "Haus är en finansiell hälsowebbapp som används av brasilianska användare för att bedöma sin ekonomi och hitta lämpliga lösningar. Byggd på Swirl under min frontend-praktik, där jag implementerade viktiga UI-flöden i Next.js och integrerade dem med Neon- och Vercel-distributioner."
     },
     "autothread": {
       "title": "AutoThread Generator",

@@ -9,9 +9,9 @@
     "viewAllGithub": "View All Projects on GitHub"
   },
   "projectsList": {
-    "will": {
-      "title": "Will – Financial Health App (Swirl)",
-      "description": "Will is a financial health web app used by Brazilian users to assess their finances and find suitable solutions. Built at Swirl during my frontend internship, where I implemented key UI flows in Next.js and integrated them with Neon and Vercel deployments."
+    "haus": {
+      "title": "Haus – Financial Health App (Swirl)",
+      "description": "Haus is a financial health web app used by Brazilian users to assess their finances and find suitable solutions. Built at Swirl during my frontend internship, where I implemented key UI flows in Next.js and integrated them with Neon and Vercel deployments."
     },
     "autothread": {
       "title": "AutoThread Generator",

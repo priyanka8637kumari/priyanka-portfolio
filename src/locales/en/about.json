@@ -1,7 +1,7 @@
 {
   "title": "About Me",
   "paragraphs": {
-    "intro": "I'm a frontend developer based in Stockholm, currently studying at <highlight>Hyper Island</highlight> and interning as a frontend developer at <highlight>Swirl</highlight>. At Swirl, I contribute to <link>Will</link>, a financial health web app used by real customers, which has given me experience with production deployments and cross‑functional collaboration.",
+    "intro": "I'm a frontend developer based in Stockholm, currently studying at <highlight>Hyper Island</highlight> and interning as a frontend developer at <highlight>Swirl</highlight>. At Swirl, I contribute to <link>Haus</link>, a financial health web app used by real customers, which has given me experience with production deployments and cross‑functional collaboration.",
     "skills": "I enjoy turning ideas into fast, accessible interfaces using <highlight>React</highlight>, <highlight>Next.js</highlight>, <highlight>TypeScript</highlight>, and modern UI libraries like <highlight>Tailwind CSS</highlight> and <highlight>shadcn/ui</highlight>. I've also built full‑stack projects with the <highlight>MERN stack</highlight> and <highlight>React + Strapi</highlight>, and I'm beginning to explore mobile UI development with <highlight>Flutter</highlight>.",
     "goals": "Right now, I'm looking for junior frontend roles where I can keep growing, ship features in production, and learn from a supportive team. Outside of coding, I enjoy spending time with my family and staying curious about new tools, patterns, and web technologies."
   },
@@ -31,7 +31,7 @@
       "title": "Frontend Developer Intern",
       "company": "Swirl, Stockholm",
       "period": "September 2025 – present",
-      "description": "Contributing to Will, a financial health web app built with Next.js, Neon, and Vercel, focusing on UI implementation and collaboration with the design and backend teams."
+      "description": "Contributing to Haus, a financial health web app built with Next.js, Neon, and Vercel, focusing on UI implementation and collaboration with the design and backend teams."
     },
     "yoice": {
       "title": "Frontend Developer Intern",

@@ -14,11 +14,11 @@ const Projects = () => {
   
   const projects = [
     {
-      key: "will",
+      key: "haus",
       image: "images/will.png",
       tags: ["Next.js", "TypeScript", "Neon", "Vercel"],
       github: "https://github.com/veuuapp/Web-MVP",
-      live: "https://usewill.com.br/en",
+      live: "https://www.hausin.app/en",
       featured: true,
     },
     {
