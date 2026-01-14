@@ -66,7 +66,7 @@ const Hero = () => {
                   highlight: <span className="text-primary font-medium" />,
                   link: (
                     <a
-                      href="https://usewill.com.br/en"
+                      href="https://www.hausin.app/en"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary font-medium underline underline-offset-4 decoration-primary/40 hover:decoration-primary"
