@@ -22,17 +22,10 @@ const About = () => {
                 <Trans
                   i18nKey="paragraphs.intro"
                   ns="about"
-                  components={{
-                    highlight: <span className="text-primary font-semibold" />,
-                    link: (
-                      <a
-                        href="https://www.hausin.app/en"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary font-semibold underline underline-offset-4 decoration-primary/40 hover:decoration-primary ml-1"
-                      />
-                    ),
-                  }}
+                  components={[
+                    <span className="text-primary font-semibold" />,
+                    <a href="https://www.hausin.app/en" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold underline" />,
+                  ]}
                 />
               </p>
 
@@ -40,9 +33,9 @@ const About = () => {
                 <Trans
                   i18nKey="paragraphs.skills"
                   ns="about"
-                  components={{
-                    highlight: <span className="text-primary font-semibold" />,
-                  }}
+                  components={[
+                    <span className="text-primary font-semibold" />,
+                  ]}
                 />
               </p>
 

@@ -1,8 +1,8 @@
 {
   "title": "About Me",
   "paragraphs": {
-    "intro": "I'm a frontend developer based in Stockholm, currently studying at <highlight>Hyper Island</highlight> and interning as a frontend developer at <highlight>Swirl</highlight>. At Swirl, I contribute to <link>Haus</link>, a financial health web app used by real customers, which has given me experience with production deployments and cross‑functional collaboration.",
-    "skills": "I enjoy turning ideas into fast, accessible interfaces using <highlight>React</highlight>, <highlight>Next.js</highlight>, <highlight>TypeScript</highlight>, and modern UI libraries like <highlight>Tailwind CSS</highlight> and <highlight>shadcn/ui</highlight>. I've also built full‑stack projects with the <highlight>MERN stack</highlight> and <highlight>React + Strapi</highlight>, and I'm beginning to explore mobile UI development with <highlight>Flutter</highlight>.",
+    "intro": "I'm a frontend developer based in Stockholm, currently studying at <0>Hyper Island</0> and interning as a frontend developer at <0>Swirl</0>. At Swirl, I contribute to <1>Haus</1>, a financial health web app used by real customers, which has given me experience with production deployments and cross‑functional collaboration.",
+    "skills": "I enjoy turning ideas into fast, accessible interfaces using <0>React</0>, <0>Next.js</0>, <0>TypeScript</0>, and modern UI libraries like <0>Tailwind CSS</0> and <0>shadcn/ui</0>. I've also built full‑stack projects with the <0>MERN stack</0> and <0>React + Strapi</0>, and I'm beginning to explore mobile UI development with <0>Flutter</0>.",
     "goals": "Right now, I'm looking for junior frontend roles where I can keep growing, ship features in production, and learn from a supportive team. Outside of coding, I enjoy spending time with my family and staying curious about new tools, patterns, and web technologies."
   },
   "profile": {

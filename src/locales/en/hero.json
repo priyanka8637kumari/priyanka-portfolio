@@ -2,7 +2,7 @@
   "badge": "Open to Frontend Developer Roles",
   "greeting": "Hi, I'm",
   "name": "Priyanka",
-  "intro": "Stockholm-based frontend developer studying at <highlight>Hyper Island</highlight> and currently interning at <highlight>Swirl</highlight>. At Swirl, I contributed to <link>Haus</link>, a financial health web app built with <highlight>Next.js</highlight>, <highlight>Neon</highlight>, and <highlight>Vercel</highlight>. I love building modern, user-focused interfaces with <highlight>React</highlight> and <highlight>TypeScript</highlight>, and I am starting to build mobile UIs with <highlight>Flutter</highlight>.",
+  "intro": "Stockholm-based frontend developer studying at <0>Hyper Island</0> and currently interning at <0>Swirl</0>. At Swirl, I contributed to <1>Haus</1>, a financial health web app built with <0>Next.js</0>, <0>Neon</0>, and <0>Vercel</0>. I love building modern, user-focused interfaces with <0>React</0> and <0>TypeScript</0>, and I am starting to build mobile UIs with <0>Flutter</0>.",
   "focusTitle": "Current Focus",
   "focusDescription": "Improving Haus in production, learning Flutter by adding new screens to my first mobile app, and deepening my experience with Next.js, TypeScript, and modern deployment tools like Vercel and Neon.",
   "buttons": {

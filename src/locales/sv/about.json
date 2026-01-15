@@ -1,8 +1,8 @@
 {
   "title": "Om mig",
   "paragraphs": {
-    "intro": "Jag är en frontend-utvecklare baserad i Stockholm, studerar för närvarande på <highlight>Hyper Island</highlight> och praktiserar som frontend-utvecklare på <highlight>Swirl</highlight>. På Swirl bidrar jag till <link>Haus</link>, en finansiell hälsowebbapp som används av riktiga kunder, vilket har gett mig erfarenhet av produktionsdistributioner och tvärfunktionellt samarbete.",
-    "skills": "Jag tycker om att förvandla idéer till snabba, tillgängliga gränssnitt med <highlight>React</highlight>, <highlight>Next.js</highlight>, <highlight>TypeScript</highlight> och moderna UI-bibliotek som <highlight>Tailwind CSS</highlight> och <highlight>shadcn/ui</highlight>. Jag har också byggt full‑stack-projekt med <highlight>MERN stack</highlight> och <highlight>React + Strapi</highlight>, och jag börjar utforska mobil UI-utveckling med <highlight>Flutter</highlight>.",
+    "intro": "Jag är en frontend-utvecklare baserad i Stockholm, studerar för närvarande på <0>Hyper Island</0> och praktiserar som frontend-utvecklare på <0>Swirl</0>. På Swirl bidrar jag till <1>Haus</1>, en finansiell hälsowebbapp som används av riktiga kunder, vilket har gett mig erfarenhet av produktionsdistributioner och tvärfunktionellt samarbete.",
+    "skills": "Jag tycker om att omvandla idéer till snabba, tillgängliga gränssnitt med <0>React</0>, <0>Next.js</0>, <0>TypeScript</0> och moderna UI-bibliotek som <0>Tailwind CSS</0> och <0>shadcn/ui</0>. Jag har också byggt fullstack-projekt med <0>MERN stack</0> och <0>React + Strapi</0>, och jag börjar utforska mobil UI-utveckling med <0>Flutter</0>.",
     "goals": "Just nu letar jag efter junior frontend-roller där jag kan fortsätta växa, leverera funktioner i produktion och lära mig av ett stödjande team. Utanför kodning tycker jag om att spendera tid med min familj och hålla mig nyfiken på nya verktyg, mönster och webbteknologier."
   },
   "profile": {
